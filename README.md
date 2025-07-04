@@ -1,4 +1,4 @@
-# 📚 Real Analysis Notes
+# 📚 Complex Analysis Notes
 
 This repository contains comprehensive lecture notes for a Complex Analysis course, covering topics such as analytic function, Cauchy integral theorem, Laurent series, residue, conformal mapping and harmonic functions in $\mathbb{C}$.
 
