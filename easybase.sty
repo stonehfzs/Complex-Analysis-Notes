@@ -1507,11 +1507,9 @@
       }
       { \eb@starttoc{#1} }
   }
-\AddToHook{enddocument/afterlastpage}
-  {
-    \IfHookEmptyTF{starttoc/after}{}
-      {\iow_now:Nn \@mainaux { \RemoveFromHook{starttoc/after}[aux] }}
-  }
+% Do not write a hook-removal command to the auxiliary file.  With current
+% LaTeX kernels that command alternates between being present and absent on
+% successive runs, so latexmk can never regard the .aux file as stable.
 \cs_set_protected:Npn \AllotPartialExt #1#2
   {
     \tl_if_exist:cTF { ttl@partial#1 }
